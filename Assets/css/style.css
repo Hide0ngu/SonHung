@@ -1,7 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+  }
 * {
     padding: 0;
     margin: 0;
@@ -19,10 +21,10 @@ img {
     display: flex;
     justify-content:flex-start;
     position: fixed;
-    height: 48px;
+    height: 48;
     width: 100%;
     z-index: 100;
-    background-color: #fff;
+    background-color: #eaeaea;
     
 }
 .home {
@@ -49,7 +51,7 @@ img {
     overflow:clip;
     background-color: aliceblue;
     flex-direction: column;
-    background-color: #ffffffbf;
+    background-color: #eaeaea;
     border-radius: 2rem;
     box-shadow: 0 0 1rem #00000080;
 }
@@ -143,10 +145,12 @@ img {
     font-family: system-ui;
 }
 .cv-container {
+    overflow: auto;
     display: grid;
     background-color: #fff;
     width: 1400px;
     max-width: 100%;
+    max-height: 100vh;
     margin: auto;
     margin-top: 64px;
     padding: 120px; 
@@ -216,11 +220,17 @@ img {
 }
 
 .intro {
+    overflow: scroll;
     padding: 10px;
     border-top: 3px solid #000;
     border-left: 3px solid #000;
 }
+.intro::-webkit-scrollbar{
+    display: none;
+  }
 .intro h1 {
+    max-height: 100%;
+    max-width: 100%;
     font-weight: bold;
 }
 .intro p {
@@ -240,21 +250,3 @@ img {
     color: #fff;
 }
 
-.scrollbar {
-	background-color: #F5F5F5;
-	float: left;
-	height: 300px;
-	margin-bottom: 25px;
-	margin-left: 22px;
-	margin-top: 40px;
-	width: 65px;
-	overflow-y: scroll;
-}
-
-.force-overflow {
-	min-height: 450px;
-}
-#style-1::-webkit-scrollbar {
-	width: 6px;
-	background-color: #F5F5F5;
-}
