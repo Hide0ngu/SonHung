@@ -18,7 +18,7 @@ html{
 }
 .home {
     display: grid;
-    background: url(/Assets/img/home-background.jpg) fixed;
+    background: url('Assets/img/home-background.jpg') fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
