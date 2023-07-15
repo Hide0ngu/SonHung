@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container-grid {
+    display: grid;
+
+}
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+.home {
+    display: grid;
+    background: url(/Assets/img/home-background.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    grid-template-columns: 1fr 1140px 1fr ;
+    grid-template-rows: 1fr 400px 1fr;
+}
+.portfolio-container {
+    display: flex;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-content: center;
+}
+.profile-container {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    overflow:clip;
+    background-color: aliceblue;
+    flex-direction: column;
+    background-color: #ffffffbf;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #00000080;
+}
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.name-tag {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0;
+}
+.subname-tag {
+    font-family: Courier New,Courier,monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+.button-group {
+    margin-top: 8px;
+}
+.link-profile {
+    font-size: 30px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+
