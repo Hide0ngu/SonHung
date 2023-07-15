@@ -130,7 +130,13 @@ list-style: none;
 
 .back-icon {
     color: #000;
-    padding-left: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-weight: bold;
     font-size: xxx-large;
+    border-radius: 4px;
+}
+.back-icon:hover {
+    background-color: #000;
+    color: #fff;
 }
