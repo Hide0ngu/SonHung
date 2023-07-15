@@ -6,14 +6,23 @@ html{
     padding: 0;
     margin: 0;
 }
+img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
 .container-grid {
     display: grid;
 
 }
 #header {
+    display: flex;
+    justify-content:flex-start;
     position: fixed;
+    height: 48px;
     width: 100%;
     z-index: 100;
+    background-color: #fff;
     
 }
 .home {
@@ -72,4 +81,161 @@ html{
     margin-left: 16px;
 }
 
+.item-navbar {
+    display: flex;
+}
 
+.navbar-button {
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+.navbar-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #6b6a69;
+    transition: .5s ease;
+  }
+  
+.navbar-button:hover {
+    color: #fff;
+    transition-delay: .5s;
+    background-color:#000;
+  
+  }
+  
+.navbar-button:hover::before {
+    width: 100%;
+  }
+  
+.navbar-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #4d4d4a;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+.navbar-button:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+.portfolio {
+    height: 100vh;
+    background-color: #d5d5d5;
+    font-family: system-ui;
+}
+.cv-container {
+    display: grid;
+    background-color: #fff;
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 64px;
+    padding: 120px; 
+    box-shadow: 0 50px 50px #858585;
+    grid-template-columns: 25% 60%;
+    column-gap: 10%;
+    row-gap: 60px;
+}
+.avatar1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #d5d5d5;
+    box-shadow: 0 20px 20px #858585;
+    
+}
+.avatar1 {
+    display: flex;
+    justify-content: end;
+}
+.name {
+    padding-left: 30px;
+    border-left: 1px solid #000;
+}
+.name h1 {
+    font-weight: 300;
+    font-size: xxx-large;
+    margin: 0 0 5px;
+}
+.name .specialize {
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.name .detail {
+    padding: 0;
+    list-style: none;
+
+}
+.name .detail .icon-detail {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 50%;
+    text-align: center;
+    font-size: small;
+    margin-right: 20px;
+}
+.name .detail .li {
+    padding: 5px 0;
+}
+.hobby {
+    padding: 10px;
+    border-top: 1px solid #000;
+}
+.hobby h1{
+    font-weight: bolder;
+    font-size: x-medium;
+    text-align: right;
+}
+.hobby li {
+    margin-top: 10px;
+    list-style: none;
+    font-weight: bold;
+    text-align: right;
+}
+
+.intro {
+    padding: 10px;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+.intro h1 {
+    font-weight: bold;
+}
+.intro p {
+    font-size: 23px;
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+}
+
+#message {
+    color: #000;
+    border-radius: 5px;
+    padding: 2px;
+}
+#message:hover {
+    background-color: #4e85e4;
+    color: #fff;
+}
