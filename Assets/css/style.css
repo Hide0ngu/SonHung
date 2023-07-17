@@ -168,7 +168,7 @@ img {
     color: aliceblue;
 }
 .portfolio {
-    height: 100vh;
+    height: 105vh;
     background-color: #d5d5d5;
     font-family: system-ui;
 }
@@ -181,8 +181,8 @@ img {
     max-height: 100vh;
     margin: auto;
     margin-top: 64px;
-    padding: 120px; 
-    box-shadow: 0 50px 50px #858585;
+    padding: 105px; 
+    box-shadow: 0 10px 20px #858585;
     grid-template-columns: 25% 60%;
     column-gap: 10%;
     row-gap: 60px;
@@ -232,10 +232,16 @@ img {
     padding: 5px 0;
 }
 .hobby {
+    overflow:scroll;
     padding: 10px;
     border-top: 1px solid #000;
 }
+.hobby::-webkit-scrollbar{
+    display: none;
+  }
 .hobby h1{
+    max-height: 100%;
+    max-width: 100%;
     font-weight: bolder;
     font-size: x-medium;
     text-align: right;
@@ -250,8 +256,8 @@ img {
 .intro {
     overflow: scroll;
     padding: 10px;
-    border-top: 3px solid #000;
-    border-left: 3px solid #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
 }
 .intro::-webkit-scrollbar{
     display: none;
@@ -287,3 +293,63 @@ img {
     }
     
 }
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
