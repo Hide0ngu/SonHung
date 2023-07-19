@@ -119,13 +119,12 @@ img {
     font-size: 14px;
     background: transparent;
     border: none;
-    padding: 1em 1.5em;
     color: #000;
     text-transform: uppercase;
     position: relative;
     transition: .5s ease;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: bolder;
   }
   
 .navbar-button::before {
@@ -142,7 +141,6 @@ img {
 .navbar-button:hover {
     color: #fff;
     transition-delay: .5s;
-    background-color:#000;
   
   }
   
@@ -353,3 +351,6 @@ img {
     color:#aaa;
     margin-bottom:0;
   }
+ .container-body .container-fluid{
+    width: 50%;
+    }
