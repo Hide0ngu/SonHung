@@ -1,0 +1,60 @@
+.container {
+    padding: 1%;
+    margin-bottom: 12px;
+}
+body{
+    background-color: #D5D5D5;
+    font-family: system-ui;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+.card {
+    margin-bottom: 32px;
+}
+.fakeimg {
+    height: 400px;
+    background: #aaa;
+  }
+
+  .fakeimg1 {
+    height: 600px;
+    background: #aaa;
+  }
+img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.02);
+    }
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
