@@ -1,9 +1,9 @@
 .container {
-    padding: 1%;
+    padding: 2%;
     margin-bottom: 12px;
 }
 body{
-    background-color: #D5D5D5;
+    background-size: cover;
     font-family: system-ui;
 }
 body::-webkit-scrollbar{
