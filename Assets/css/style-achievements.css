@@ -4,7 +4,7 @@
 }
 body{
     background-size: cover;
-    font-family: system-ui;
+    font-family: 'Poppins', sans-serif;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -57,4 +57,11 @@ img {
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+}
+
+.box {
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow:  13px 13px 35px #a4a4a4,
+             -13px -13px 35px #ffffff;
 }
