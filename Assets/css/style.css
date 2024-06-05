@@ -110,6 +110,12 @@ img {
     display: flex;
 }
 
+.img-self {
+  width: 200;
+  height: 100;
+  object-fit: fill;
+}
+
 .navbar-button {
     font-size: 14px;
     background: transparent;
